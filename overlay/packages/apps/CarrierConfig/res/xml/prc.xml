@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8"?>
+<carrier_config_list>
+    <carrier_config cid="1435" name="China Mobile">
+        <int name="moto_disabled_nr_mode_int" value="0" />
+    </carrier_config>
+    <carrier_config cid="1436" name="China Unicom">
+        <int name="moto_disabled_nr_mode_int" value="0" />
+    </carrier_config>
+    <carrier_config cid="2237" name="China Telecom">
+        <int name="moto_disabled_nr_mode_int" value="0" />
+    </carrier_config>
+    <carrier_config cid="1435" customerid="cmcc" name="China Mobile">
+        <string name="5g_icon_configuration_string">connected_mmwave:5G_Plus,connected:5G,not_restricted_rrc_idle:5G</string>
+        <string name="5g_icon_display_grace_period_string">connected_mmwave,legacy,30;connected,legacy,30;connected_mmwave,not_restricted_rrc_con,30;connected,not_restricted_rrc_con,30;not_restricted_rrc_idle,not_restricted_rrc_con,30</string>
+    </carrier_config>
+    <carrier_config cid="1436" customerid="cucn" name="China Unicom">
+        <string name="5g_icon_configuration_string">connected_mmwave:5G_Plus,connected:5G,not_restricted_rrc_idle:5G</string>
+        <string name="5g_icon_display_grace_period_string">connected_mmwave,legacy,30;connected,legacy,30;connected_mmwave,not_restricted_rrc_con,30;connected,not_restricted_rrc_con,30;not_restricted_rrc_idle,not_restricted_rrc_con,30</string>
+    </carrier_config>
+    <carrier_config cid="2237" customerid="ctcn" name="China Telecom">
+        <string name="5g_icon_configuration_string">connected_mmwave:5G_Plus,connected:5G,not_restricted_rrc_idle:5G</string>
+        <string name="5g_icon_display_grace_period_string">connected_mmwave,legacy,30;connected,legacy,30;connected_mmwave,not_restricted_rrc_con,30;connected,not_restricted_rrc_con,30;not_restricted_rrc_idle,not_restricted_rrc_con,30</string>
+    </carrier_config>
+</carrier_config_list>
