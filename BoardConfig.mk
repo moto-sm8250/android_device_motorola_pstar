@@ -13,6 +13,7 @@ TARGET_BOOTLOADER_BOARD_NAME := nio
 
 # Kernel
 TARGET_KERNEL_CONFIG := vendor/lineageos_nio_defconfig
+KERNEL_LTO := none
 
 # Inherit from the proprietary version
 -include vendor/motorola/nio/BoardConfigVendor.mk
