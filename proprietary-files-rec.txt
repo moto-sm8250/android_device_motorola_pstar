@@ -1,8 +1,8 @@
-# All unpinned blobs below are extracted from nio S1RN32.19
+# All unpinned blobs below are extracted from pstar RRAS31.Q3-19-86-4
 
 # Touchscreen firmware
-vendor/firmware/novatek_ts_fw.bin:recovery/root/vendor/firmware/novatek_ts_fw.bin
-vendor/firmware/novatek_ts_mp.bin:recovery/root/vendor/firmware/novatek_ts_mp.bin
+vendor/firmware/stmicro-csot-fts3639-21120227-de141027-pstar.ftb:recovery/root/vendor/firmware/stmicro-csot-fts3639-21120227-de141027-pstar.ftb
+vendor/firmware/stmicro-visionox-fts3639-21072312-0009200c-pstar.ftb:recovery/root/vendor/firmware/stmicro-visionox-fts3639-21072312-0009200c-pstar.ftb
 
 # Vibrator firmware
 vendor/firmware/aw8695_haptic.bin:recovery/root/vendor/firmware/aw8695_haptic.bin

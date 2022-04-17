@@ -1,4 +1,4 @@
-# All unpinned blobs below are extracted from nio S1RN32.19
+# All unpinned blobs below are extracted from pstar S1RA32.41-20-16
 
 # ACDB
 vendor/etc/acdbdata/adsp_avs_config.acdb
@@ -30,21 +30,13 @@ vendor/lib/rfsa/adsp/libcamera_nn_skel.so
 vendor/lib/rfsa/adsp/libcvpdsp_skel.so
 vendor/lib/rfsa/adsp/libdspCV_skel.so
 vendor/lib/rfsa/adsp/libdsp_streamer_binning.so
-vendor/lib/rfsa/adsp/libeye_tracking_dsp_sample_skel.so
 vendor/lib/rfsa/adsp/libfastcvadsp.so
 vendor/lib/rfsa/adsp/libfastcvdsp_skel.so
-vendor/lib/rfsa/adsp/libhalide_hexagon_remote_skel.so
 vendor/lib/rfsa/adsp/libhexagon_nn_skel.so
-vendor/lib/rfsa/adsp/libqvr_3dof_tracker_skel.so
-vendor/lib/rfsa/adsp/libqvr_cam_dsp_driver_skel.so
-vendor/lib/rfsa/adsp/libqvr_dsp_driver_skel.so
 vendor/lib/rfsa/adsp/libscveObjectSegmentation_skel.so
 vendor/lib/rfsa/adsp/libscveT2T_skel.so
 vendor/lib/rfsa/adsp/libsns_device_mode_skel.so
 vendor/lib/rfsa/adsp/libsns_low_lat_stream_skel.so
-vendor/lib/rfsa/adsp/libtracker_6dof_skel_1130.so
-vendor/lib/rfsa/adsp/libtracker_6dof_skel_8250.so
-vendor/lib/rfsa/adsp/libtracker_6dof_skel_8350.so
 
 # Alarm
 vendor/bin/hw/vendor.qti.hardware.alarm@1.0-service
@@ -53,8 +45,8 @@ vendor/lib64/hw/vendor.qti.hardware.alarm@1.0-impl.so
 vendor/lib64/vendor.qti.hardware.alarm@1.0.so
 
 # Alarm - from lmi-user 11 RKQ1.200826.002
--product/app/PowerOffAlarm/PowerOffAlarm.apk|5885c09b8446d8b0c1f665bd9522792d79201cd7
-vendor/bin/power_off_alarm|160bd6e3ae23b4aba3b73d5c1865074beac77e7c
+#-product/app/PowerOffAlarm/PowerOffAlarm.apk|5885c09b8446d8b0c1f665bd9522792d79201cd7
+#vendor/bin/power_off_alarm|160bd6e3ae23b4aba3b73d5c1865074beac77e7c
 
 # Audio
 vendor/lib/libacdb-fts.so
@@ -96,38 +88,19 @@ vendor/lib64/vendor.qti.hardware.fm@1.0.so
 vendor/lib/btaudio_offload_if.so
 vendor/lib/hw/audio.bluetooth_qti.default.so
 vendor/lib/hw/vendor.qti.hardware.bluetooth_audio@2.0-impl.so
-vendor/lib/hw/vendor.qti.hardware.bluetooth_audio@2.1-impl.so
 vendor/lib/libbluetooth_audio_session_qti.so
-vendor/lib/libbluetooth_audio_session_qti_2_1.so
 
 # Bluetooth (aptX)
 lib64/libaptX_encoder.so
 lib64/libaptXHD_encoder.so
 
 # Camera
-vendor/etc/init/android.hardware.camera.provider@2.4-service_64.rc
 vendor/lib/libcamxexternalformatutils.so
 vendor/lib64/camera/com.mot.eeprom.mot_gt24p64b_ov16a1q_eeprom.so
-vendor/lib64/camera/com.mot.eeprom.mot_ov02b1b_otp.so
 vendor/lib64/camera/com.mot.eeprom.mot_ov16a10_gt9772.so
-vendor/lib64/camera/com.mot.eeprom.mot_ov64b_gt9767.so
-vendor/lib64/camera/com.mot.eeprom.mot_s5k4h7_front_otp.so
-vendor/lib64/camera/com.qti.sensor.mot_ov02b1b.so
 vendor/lib64/camera/com.qti.sensor.mot_ov16a10.so
 vendor/lib64/camera/com.qti.sensor.mot_ov16a1q.so
-vendor/lib64/camera/com.qti.sensor.mot_ov64b.so
-vendor/lib64/camera/com.qti.sensor.mot_s5k4h7_front.so
-vendor/lib64/camera/com.qti.sensormodule.mot_nio_ov02b1b.bin
-vendor/lib64/camera/com.qti.sensormodule.mot_nio_ov16a10.bin
-vendor/lib64/camera/com.qti.sensormodule.mot_nio_ov16a1q.bin
-vendor/lib64/camera/com.qti.sensormodule.mot_nio_ov64b.bin
-vendor/lib64/camera/com.qti.sensormodule.mot_nio_s5k4h7_front.bin
 vendor/lib64/camera/com.qti.tuned.default.bin
-vendor/lib64/camera/com.qti.tuned.mot_nio_ov02b1b.bin
-vendor/lib64/camera/com.qti.tuned.mot_nio_ov16a10.bin
-vendor/lib64/camera/com.qti.tuned.mot_nio_ov16a1q.bin
-vendor/lib64/camera/com.qti.tuned.mot_nio_ov64b.bin
-vendor/lib64/camera/com.qti.tuned.mot_nio_s5k4h7.bin
 vendor/lib64/camera/components/com.arcsoft.node.capturebokeh.so
 vendor/lib64/camera/components/com.arcsoft.node.dc_capture.so
 vendor/lib64/camera/components/com.arcsoft.node.realtimebokeh.so
@@ -197,7 +170,6 @@ vendor/lib64/libarcsoft_distortion_correction.so
 vendor/lib64/libarcsoft_dualcam_refocus_image.so
 vendor/lib64/libarcsoft_dualcam_refocus_video.so
 vendor/lib64/libarcsoft_portrait_distortion_correction.so
-vendor/lib64/libarcsoft_zoomtranslator_imp.so
 vendor/lib64/libbitmlengine.so
 vendor/lib64/libc2d_helper.so
 vendor/lib64/libcamera_nn_stub.so
@@ -221,17 +193,17 @@ vendor/lib64/libfcell.so
 vendor/lib64/libipebpsstriping.so
 vendor/lib64/libmot_afd.so
 vendor/lib64/libmot_chi_desktop_helper.so
+vendor/lib64/libmot_engine_settings.so
 vendor/lib64/libmot_flash_aw3643.so
-vendor/lib64/libmot_lux_standardization.so
 vendor/lib64/libmotcameramodulemonitor.so
+vendor/lib64/libmotoisdataqueue.so
 vendor/lib64/libmpbase.so
-vendor/lib64/libmulticam_optical_zoom_control.so
-vendor/lib64/libmulticam_video_optical_zoom.so
 vendor/lib64/libofflinelog.so
 vendor/lib64/libos.so
 vendor/lib64/libswregistrationalgo.so
 vendor/lib64/libsynx.so
 vendor/lib64/libthreadutils.so
+vendor/lib64/libtriplecam_video_optical_zoom.so
 vendor/lib64/libvidhance.so
 vendor/lib64/libvidhance_active_ois.so
 vendor/lib64/libvidhance_dmbr.so
@@ -241,15 +213,103 @@ vendor/lib64/libvidhance_horizon_correction.so
 vendor/lib64/libvidhance_stabilizer.so
 vendor/lib64/vendor.qti.hardware.camera.postproc@1.0-service-impl.so
 
+# Camera-components
+vendor/lib64/camera/components/com.arcsoft.node.capturebokeh.so
+vendor/lib64/camera/components/com.arcsoft.node.dc_capture.so
+vendor/lib64/camera/components/com.arcsoft.node.realtimebokeh.so
+vendor/lib64/camera/components/com.arcsoft.node.smooth_transition.so
+vendor/lib64/camera/components/com.arcsoft.node.uwdc_capture.so
+vendor/lib64/camera/components/com.arcsoft.node.uwdc_preview.so
+vendor/lib64/camera/components/com.mot.node.c2d.so
+vendor/lib64/camera/components/com.qti.camx.chiiqutils.so
+vendor/lib64/camera/components/com.qti.eisv2.so
+vendor/lib64/camera/components/com.qti.eisv3.so
+vendor/lib64/camera/components/com.qti.hvx.addconstant.so
+vendor/lib64/camera/components/com.qti.hvx.binning.so
+vendor/lib64/camera/components/com.qti.node.customhwnode.so
+vendor/lib64/camera/components/com.qti.node.depth.so
+vendor/lib64/camera/components/com.qti.node.dummyrtb.so
+vendor/lib64/camera/components/com.qti.node.dummysat.so
+vendor/lib64/camera/components/com.qti.node.eisv2.so
+vendor/lib64/camera/components/com.qti.node.eisv3.so
+vendor/lib64/camera/components/com.qti.node.fcv.so
+vendor/lib64/camera/components/com.qti.node.gpu.so
+vendor/lib64/camera/components/com.qti.node.memcpy.so
+vendor/lib64/camera/components/com.qti.node.remosaic.so
+vendor/lib64/camera/components/com.qti.node.stich.so
+vendor/lib64/camera/components/com.qti.node.swregistration.so
+vendor/lib64/camera/components/com.qtistatic.stats.aec.so
+vendor/lib64/camera/components/com.qtistatic.stats.af.so
+vendor/lib64/camera/components/com.qtistatic.stats.awb.so
+vendor/lib64/camera/components/com.qtistatic.stats.pdlib.so
+vendor/lib64/camera/components/com.qti.stats.aec.so
+vendor/lib64/camera/components/com.qti.stats.aecwrapper.so
+vendor/lib64/camera/components/com.qti.stats.afd.so
+vendor/lib64/camera/components/com.qti.stats.af.so
+vendor/lib64/camera/components/com.qti.stats.afwrapper.so
+vendor/lib64/camera/components/com.qti.stats.asd.so
+vendor/lib64/camera/components/com.qti.stats.awb.so
+vendor/lib64/camera/components/com.qti.stats.awbwrapper.so
+vendor/lib64/camera/components/com.qti.stats.hafoverride.so
+vendor/lib64/camera/components/com.qti.stats.haf.so
+vendor/lib64/camera/components/com.qti.stats.pdlib.so
+vendor/lib64/camera/components/com.qti.stats.pdlibsony.so
+vendor/lib64/camera/components/com.qti.stats.pdlibwrapper.so
+vendor/lib64/camera/components/com.qti.stats.tracker.so
+vendor/lib64/camera/components/com.vidhance.node.ica.so
+vendor/lib64/camera/components/com.vidhance.node.processing.so
+vendor/lib64/camera/components/com.vidhance.stats.aec_dmbr.so
+vendor/lib64/camera/com.mot.eeprom.mot_gt24p64b_ov16a1q_eeprom.so
+vendor/lib64/camera/com.mot.eeprom.mot_gt24p64e_ov32b_eeprom.so
+vendor/lib64/camera/com.mot.eeprom.mot_gt24p64e_s5khm2_eeprom.so
+vendor/lib64/camera/com.mot.eeprom.mot_ov08a10_eeprom.so
+vendor/lib64/camera/com.mot.eeprom.mot_ov16a10_gt9772.so
+vendor/lib64/camera/com.qti.sensormodule.mot_pstar_ov08a10.bin
+vendor/lib64/camera/com.qti.sensormodule.mot_pstar_ov16a10.bin
+vendor/lib64/camera/com.qti.sensormodule.mot_pstar_ov16a1q.bin
+vendor/lib64/camera/com.qti.sensormodule.mot_pstar_ov32b.bin
+vendor/lib64/camera/com.qti.sensormodule.mot_pstar_s5khm2.bin
+vendor/lib64/camera/com.qti.sensor.mot_ov08a10.so
+vendor/lib64/camera/com.qti.sensor.mot_ov16a10.so
+vendor/lib64/camera/com.qti.sensor.mot_ov16a1q.so
+vendor/lib64/camera/com.qti.sensor.mot_ov32b.so
+vendor/lib64/camera/com.qti.sensor.mot_s5khm2.so
+vendor/lib64/camera/com.qti.tuned.default.bin
+vendor/lib64/camera/com.qti.tuned.mot_pstar_ov08a10.bin
+vendor/lib64/camera/com.qti.tuned.mot_pstar_ov16a10.bin
+vendor/lib64/camera/com.qti.tuned.mot_pstar_ov16a1q.bin
+vendor/lib64/camera/com.qti.tuned.mot_pstar_ov32b.bin
+vendor/lib64/camera/com.qti.tuned.mot_pstar_s5khm2.bin
+vendor/lib64/com.qti.feature2.anchorsync.so
+vendor/lib64/com.qti.feature2.demux.so
+vendor/lib64/com.qti.feature2.frameselect.so
+vendor/lib64/com.qti.feature2.fusion.so
+vendor/lib64/com.qti.feature2.generic.so
+vendor/lib64/com.qti.feature2.gs.so
+vendor/lib64/com.qti.feature2.hdr.so
+vendor/lib64/com.qti.feature2.memcpy.so
+vendor/lib64/com.qti.feature2.mfsr.so
+vendor/lib64/com.qti.feature2.qcfa.so
+vendor/lib64/com.qti.feature2.rawhdr.so
+vendor/lib64/com.qti.feature2.rt.so
+vendor/lib64/com.qti.feature2.serializer.so
+vendor/lib64/com.qti.feature2.stub.so
+vendor/lib64/com.qti.feature2.swmf.so
+vendor/lib64/hw/com.qti.chi.override.so
+vendor/lib64/libcom.qti.chinodeutils.so
+
 # Camera-configs
+vendor/etc/camera/aec_golden_tele.bin
 vendor/etc/camera/arcsoft_calibration_u_dc.bin
 vendor/etc/camera/arcsoft_standalone_calibration_u_dc.bin
-vendor/etc/camera/dual_golden_depth.bin
+vendor/etc/camera/dual_golden_tele.bin
 vendor/etc/camera/dual_golden_wide.bin
+vendor/etc/camera/mot_engine_config.bin
 vendor/etc/camera/vidhance_calibration
 
 # Camera (Firmware)
 vendor/firmware/CAMERA_ICP.elf
+vendor/firmware/mot_dw9781c.prog
 
 # Camera (Moto desktop)
 vendor/bin/hw/motorola.hardware.camera.desktop@2.0-service
@@ -347,24 +407,25 @@ vendor/bin/hw/vendor.qti.hardware.capabilityconfigstore@1.0-service
 vendor/etc/init/vendor.qti.hardware.capabilityconfigstore@1.0-service.rc
 vendor/lib64/hw/vendor.qti.hardware.capabilityconfigstore@1.0-impl.so
 
-# Display
-vendor/lib64/libdisp-aba.so
-vendor/lib64/libdisplayqos.so
-vendor/lib64/libdisplayskuutils.so
-vendor/lib64/libdpps.so
-vendor/lib64/libhdr_tm.so
-vendor/lib64/libhdrdynamic.so
-vendor/lib64/libhdrdynamicootf.so
-vendor/lib64/libqseed3.so
-vendor/lib64/libsdm-color.so
-vendor/lib64/libsdm-colormgr-algo.so
-vendor/lib64/libsdm-diag.so
-vendor/lib64/libsdm-disp-vndapis.so
-vendor/lib64/libsdmextension.so
-vendor/lib64/libtinyxml2_1.so
+# Display - from nio S1RN32.19
+vendor/lib64/libdisp-aba.so|902839da31464e54bd4756747db2dd7ad867484f
+vendor/lib64/libdisplayqos.so|15701f18257c43be5657bbd867a8acf1f469e373
+vendor/lib64/libdisplayskuutils.so|3ddb2ffe55aa9aef686cf3be00ae5e0d1d8f9d93
+vendor/lib64/libdpps.so|aed0ddf27cae0c0d6fed1e27a7b19b1ffeb22002
+vendor/lib64/libhdr_tm.so|4be3cfff1ef40cbc6ad329b79c60881263aa6723
+vendor/lib64/libhdrdynamic.so|917095388aaa80685fadcf10e414ff1261350aef
+vendor/lib64/libhdrdynamicootf.so|4bd09dd4a48176b18a64cfa14faacbe22a43366f
+vendor/lib64/libqseed3.so|c9fb729cf48278d0c87d27c0af17ae3a8ccb1bf7
+vendor/lib64/libsdm-color.so|29cbc16f6fa573d21f48e2be2ff0d51de3357378
+vendor/lib64/libsdm-colormgr-algo.so|1fb7f3cb11557bbf677afb5d6eda0e4e9fd3ac58
+vendor/lib64/libsdm-diag.so|57e8b57e52b98a0a151434414756fcf91147a511
+vendor/lib64/libsdm-disp-vndapis.so|fd0b0beac164c92bfa012dbc059cb50cdde2dec6
+vendor/lib64/libsdmextension.so|99377ab065105f0cbd17bbe5907cdbb8027a9f17
+vendor/lib64/libtinyxml2_1.so|fb0a2b16e5cfd28515268edc5c2345190d1ef4e5
 
 # Display (Calibration Data)
-vendor/etc/qdcm_calib_data_mipi_mot_vid_tm_1080x2520_670.xml
+vendor/etc/qdcm_calib_data_mipi_mot_cmd_csot_1080p_dsc_667.xml
+vendor/etc/qdcm_calib_data_mipi_mot_cmd_visionox_1080p_dsc_667.xml
 
 # Display postprocessing
 vendor/bin/hw/vendor.display.color@1.0-service
@@ -425,16 +486,17 @@ vendor/lib64/libtrustedapploader.so
 vendor/lib64/libwvhidl.so
 
 # Fingerprint
-vendor/bin/hw/android.hardware.biometrics.fingerprint@2.1-service-ets
+vendor/bin/hw/android.hardware.biometrics.fingerprint@2.1-goodixservice
 vendor/bin/hw/android.hardware.biometrics.fingerprint@2.1-service-fpc
 vendor/bin/hw/fpc_ident:vendor/bin/fpc_ident
-vendor/etc/init/android.hardware.biometrics.fingerprint@2.1-service-ets2.rc
+vendor/etc/init/android.hardware.biometrics.fingerprint@2.1-goodixservice.rc
 vendor/etc/init/android.hardware.biometrics.fingerprint@2.1-service-fpc2.rc
 vendor/lib64/com.fingerprints.extension@1.0.so
 vendor/lib64/com.motorola.hardware.biometric.fingerprint@1.0.so
-vendor/lib64/libets_fp_et5.so
-vendor/lib64/libets_teeclient.so
-vendor/lib64/vendor.egistec.hardware.fingerprint@2.0.so
+vendor/lib64/libgf_ca.so
+vendor/lib64/libgf_hal.so
+vendor/lib64/libgoodixhwfingerprint.so
+vendor/lib64/vendor.goodix.hardware.biometrics.fingerprint@3.0.so
 
 # Gatekeeper
 vendor/bin/hw/android.hardware.gatekeeper@1.0-service-qti
@@ -486,56 +548,50 @@ vendor/lib64/vendor.qti.gnss@4.0.so
 vendor/lib64/vendor.qti.hardware.cacert@1.0.so
 vendor/lib64/vendor.qti.hardware.qccsyshal@1.0.so
 
-# Graphics
--vendor/app/com.qualcomm.qti.gpudrivers.kona.api30/com.qualcomm.qti.gpudrivers.kona.api30.apk;PRESIGNED
-vendor/lib/egl/eglSubDriverAndroid.so
-vendor/lib/egl/libEGL_adreno.so
-vendor/lib/egl/libGLESv1_CM_adreno.so
-vendor/lib/egl/libGLESv2_adreno.so
-vendor/lib/egl/libq3dtools_adreno.so
-vendor/lib/egl/libq3dtools_esx.so
-vendor/lib/libadreno_app_profiles.so
-vendor/lib/libadreno_utils.so
-vendor/lib/libC2D2.so
-vendor/lib/libc2d30_bltlib.so
-vendor/lib/libCB.so
-vendor/lib/libgpudataproducer.so
-vendor/lib/libgsl.so
-vendor/lib/libllvm-glnext.so
-vendor/lib/libllvm-qcom.so
-vendor/lib/libOpenCL.so
-vendor/lib/libVkLayer_q3dtools.so
-vendor/lib64/egl/eglSubDriverAndroid.so
-vendor/lib64/egl/libEGL_adreno.so
-vendor/lib64/egl/libGLESv1_CM_adreno.so
-vendor/lib64/egl/libGLESv2_adreno.so
-vendor/lib64/egl/libq3dtools_adreno.so
-vendor/lib64/egl/libq3dtools_esx.so
-vendor/lib64/libadreno_app_profiles.so
-vendor/lib64/libadreno_utils.so
-vendor/lib64/libC2D2.so
-vendor/lib64/libc2d30_bltlib.so
-vendor/lib64/libCB.so
-vendor/lib64/libgpudataproducer.so
-vendor/lib64/libgsl.so
-vendor/lib64/libllvm-glnext.so
-vendor/lib64/libllvm-qcom.so
-vendor/lib64/libOpenCL.so
-vendor/lib64/libVkLayer_q3dtools.so
+# Graphics - from nio S1RN32.19
+-vendor/app/com.qualcomm.qti.gpudrivers.kona.api30/com.qualcomm.qti.gpudrivers.kona.api30.apk;PRESIGNED|6e85bf1b79c77e90c41863283655d3543d003a63
+vendor/lib/egl/eglSubDriverAndroid.so|1a1c287a32095bede1cd199594cb7fb89c1c15d0
+vendor/lib/egl/libEGL_adreno.so|4ee434ffeab2568d7187635adae39106ca6163bb
+vendor/lib/egl/libGLESv1_CM_adreno.so|64b58204e029c848e35f50ad163952db497ea90f
+vendor/lib/egl/libGLESv2_adreno.so|1549c080357e7e059de976a2fbd39ed42105391a
+vendor/lib/egl/libq3dtools_adreno.so|e50851c6d93051fec5cb6b3314edf0791a539b0d
+vendor/lib/egl/libq3dtools_esx.so|8f346ae31cbd0f2b92dd597ad0b8ac94c265474a
+vendor/lib/libadreno_app_profiles.so|af298d5d5ef0fff3a8ea0cd5caae064572f1382a
+vendor/lib/libadreno_utils.so|069864d4b01d97375035aa3d91fff49e88f05937
+vendor/lib/libC2D2.so|c1916f2adb917f3567b872670496994456472586
+vendor/lib/libc2d30_bltlib.so|90766895641fbda817bb2818a0538cb66be62d8b
+vendor/lib/libCB.so|817667e1754ece87093625a779025c120bf2da06
+vendor/lib/libgpudataproducer.so|a472512dc045e3c1ae39fbcc15d5b16e5c04bb8b
+vendor/lib/libgsl.so|cdf2bb545b573ae565032f56462287795b83cbd3
+vendor/lib/libllvm-glnext.so|dd12375353f2420bdc6808bd6033eaf7abf4bdd1
+vendor/lib/libllvm-qcom.so|b3de7da40d95ae3be6f2f46d5ddc221cb852efe8
+vendor/lib/libOpenCL.so|be3067845af3b7d49ce2fcdd99625e4cd8276f09
+vendor/lib/libVkLayer_q3dtools.so|820fc5de3b93ae7c75f3e6a346efaeef864e804a
+vendor/lib64/egl/eglSubDriverAndroid.so|0e0c4a1d9462c15e2b14d03b66bed51e85bd9e27
+vendor/lib64/egl/libEGL_adreno.so|a11a970b9621bb08ab6b8f60abb12c55b12ee55a
+vendor/lib64/egl/libGLESv1_CM_adreno.so|d22773a61614ac71cf68d874db66bbe7739761ce
+vendor/lib64/egl/libGLESv2_adreno.so|7f65ebf978e5e0bbcda168f3ffe94a5a7ca872f0
+vendor/lib64/egl/libq3dtools_adreno.so|bbd2bdeb3d27461742b10490dc4d3f45379f276d
+vendor/lib64/egl/libq3dtools_esx.so|fb02416ee6cff35cb5899144011c803895a5868d
+vendor/lib64/libadreno_app_profiles.so|be3489392f712382042d6d0a1e769c70176d74e3
+vendor/lib64/libadreno_utils.so|be384cb99c00829ef61027f41f5a8fab386aa9d5
+vendor/lib64/libC2D2.so|2f5bb4e82006bcc854aa468126bd3fffab339f67
+vendor/lib64/libc2d30_bltlib.so|6dfc4b3393a83113a91e2a3d8c2e4e58a62636dc
+vendor/lib64/libCB.so|063c94959b0748da37900414e0270f3dc08a7ca6
+vendor/lib64/libgpudataproducer.so|e67d8c3fcf91a3da4dffed3db0a44ba80bcacbf1
+vendor/lib64/libgsl.so|a8490afe3f5423eefb5ea2131925d78112233479
+vendor/lib64/libllvm-glnext.so|57d8292057944419e914b44807e58de0eb2dd6f5
+vendor/lib64/libllvm-qcom.so|e4ff6f0d3cd3823fa65768b935adfe878a4bda7a
+vendor/lib64/libOpenCL.so|ce96cb481976251b309fed436c28935bad5f3e64
+vendor/lib64/libVkLayer_q3dtools.so|701597bbdbacca42238cade811ec3416dcc203d5
 
-# Graphics firmware
-vendor/firmware/a650_gmu.bin
-vendor/firmware/a650_sqe.fw
+# Graphics firmware - from nio S1RN32.19
+vendor/firmware/a650_gmu.bin|c744acb10afb7c980d333c5b6521e2a18993ff14
+vendor/firmware/a650_sqe.fw|130a0df5c562e69ab717867ebc0b7abf6f3bcb3f
 
-# Graphics (Vulkan)
-vendor/lib/hw/vulkan.adreno.so
-vendor/lib64/hw/vulkan.adreno.so
-
-# IFAA
--system_ext/app/IfaaService/IfaaService.apk
-vendor/bin/hw/vendor.zui.hardware.ifaa@1.0-service
-vendor/etc/init/vendor.zui.hardware.ifaa@1.0-service.rc
-vendor/lib64/vendor.zui.hardware.ifaa@1.0.so
+# Graphics (Vulkan) - from nio S1RN32.19
+vendor/lib/hw/vulkan.adreno.so|dbcf1f95f364957d79c21970c1994cdeeab087cf
+vendor/lib64/hw/vulkan.adreno.so|9aefb6da610ebda6afc7061275d1e150671cde70
 
 # Keymaster
 vendor/bin/hw/android.hardware.keymaster@4.1-service-qti
@@ -640,7 +696,17 @@ vendor/lib64/unnhal-acc-hta.so
 vendor/lib64/unnhal-acc-hvx.so
 
 # NFC
-vendor/lib64/libpn557_fw.so
+vendor/bin/STFlashTool
+vendor/etc/init/hw/init.vendor.st21nfc.rc
+
+# NFC - configs
+vendor/etc/libnfc-hal-st.conf
+vendor/etc/libnfc-nci-st.conf
+vendor/etc/st21nfc_conf_ds.txt
+vendor/etc/st21nfc_conf_ss.txt
+
+# NFC firmware
+vendor/firmware/st21nfc_fw.bin
 
 # OEM
 vendor/bin/motobox
@@ -740,12 +806,7 @@ vendor/lib64/libqmiservices.so
 
 # Radio
 etc/permissions/privapp-permissions-qti.xml
--product/app/uimgbaservice/uimgbaservice.apk
-product/etc/permissions/UimGba.xml
-product/etc/permissions/UimGbaManager.xml
 product/etc/permissions/telephony_product_privapp-permissions-qti.xml
-product/framework/uimgbalibrary.jar
-product/framework/uimgbamanagerlibrary.jar
 -system_ext/app/atfwd/atfwd.apk
 -system_ext/app/datastatusnotification/datastatusnotification.apk
 -system_ext/app/QtiTelephonyService/QtiTelephonyService.apk
@@ -753,7 +814,6 @@ system_ext/etc/permissions/com.qualcomm.location.xml
 system_ext/etc/permissions/privapp-permissions-qti-system-ext.xml
 system_ext/etc/permissions/qcrilhook.xml
 system_ext/etc/permissions/telephony_system-ext_privapp-permissions-qti.xml
-system_ext/etc/sysconfig/qti_telephony_system_packages_config.xml
 system_ext/framework/qcrilhook.jar
 -system_ext/priv-app/qcrilmsgtunnel/qcrilmsgtunnel.apk
 vendor/bin/adpl
@@ -862,10 +922,6 @@ vendor/radio/qcril_database/upgrade/24_version_qcrildb.sql
 vendor/radio/qcril_database/upgrade/25_version_qcrildb.sql
 vendor/radio/qcril_database/upgrade/26_version_qcrildb.sql
 vendor/radio/qcril_database/upgrade/27_version_qcrildb.sql
-vendor/radio/qcril_database/upgrade/28_version_qcrildb.sql
-vendor/radio/qcril_database/upgrade/29_version_qcrildb.sql
-vendor/radio/qcril_database/upgrade/30_version_qcrildb.sql
-vendor/radio/qcril_database/upgrade/31_version_qcrildb.sql
 vendor/radio/qcril_database/upgrade/3_version_qcrildb.sql
 vendor/radio/qcril_database/upgrade/4_version_qcrildb.sql
 vendor/radio/qcril_database/upgrade/5_version_qcrildb.sql
@@ -879,15 +935,9 @@ etc/permissions/moto-telephony.xml:system_ext/etc/permissions/moto-telephony.xml
 framework/moto-telephony.jar:system_ext/framework/moto-telephony.jar
 
 # Radio - IMS (APK) - from patched source
--system_ext/priv-app/ims/ims.apk|6899c19f642d692f1c86c56651bd4d7db892ba7a
+-system_ext/priv-app/ims/ims.apk|628e59630e10c83e4a3fa055c47f1c4f4073eb47
 
 # Radio - IMS
--system_ext/app/ImsRcsService/ImsRcsService.apk
-system_ext/etc/permissions/vendor.qti.ims.rcsservice.xml
-system_ext/framework/vendor.qti.ims.connection-V1.0-java.jar
-system_ext/framework/vendor.qti.ims.factory-V2.0-java.jar
-system_ext/framework/vendor.qti.ims.rcssip-V1.0-java.jar
-system_ext/framework/vendor.qti.ims.rcsuce-V1.0-java.jar
 system_ext/lib64/lib-imsvideocodec.so
 system_ext/lib64/lib-imsvt.so
 system_ext/lib64/lib-imsvtextutils.so
@@ -973,9 +1023,7 @@ vendor/lib64/vendor.qti.hardware.sensorscalibrate@1.0.so
 # Sensor-configs
 vendor/etc/sensors/config/default_sensors.json
 vendor/etc/sensors/config/dynamic_sensors.json
-vendor/etc/sensors/config/icm4x6xx_0.json
 vendor/etc/sensors/config/irq.json
-vendor/etc/sensors/config/lsm6ds3c_0.json
 vendor/etc/sensors/config/mmc56x3x_0.json
 vendor/etc/sensors/config/mot_camgest.json
 vendor/etc/sensors/config/mot_chopchop.json
@@ -983,7 +1031,6 @@ vendor/etc/sensors/config/mot_devorient.json
 vendor/etc/sensors/config/mot_ftm.json
 vendor/etc/sensors/config/mot_ltv.json
 vendor/etc/sensors/config/mot_offbody.json
-vendor/etc/sensors/config/mot_tap.json
 vendor/etc/sensors/config/power_0.json
 vendor/etc/sensors/config/sns_amd.json
 vendor/etc/sensors/config/sns_amd_sw_disabled.json
@@ -1001,7 +1048,6 @@ vendor/etc/sensors/config/sns_rotv.json
 vendor/etc/sensors/config/sns_smd.json
 vendor/etc/sensors/config/sns_tilt.json
 vendor/etc/sensors/config/sns_tilt_sw_disabled.json
-vendor/etc/sensors/config/vcnl36866_0.json
 vendor/etc/sensors/proto/descriptor.proto
 vendor/etc/sensors/proto/mot_barocal.proto
 vendor/etc/sensors/proto/mot_camgest.proto
@@ -1019,7 +1065,6 @@ vendor/etc/sensors/proto/mot_offbody.proto
 vendor/etc/sensors/proto/mot_probe.proto
 vendor/etc/sensors/proto/mot_proxcal.proto
 vendor/etc/sensors/proto/mot_stowed.proto
-vendor/etc/sensors/proto/mot_tap.proto
 vendor/etc/sensors/proto/mot_vsync.proto
 vendor/etc/sensors/proto/nanopb.proto
 vendor/etc/sensors/proto/sns_accel.proto
@@ -1113,7 +1158,6 @@ vendor/lib64/libscveObjectTracker.so
 vendor/lib64/libscveObjectTracker_stub.so
 
 # Soter
--system_ext/app/SoterService/SoterService.apk
 vendor/bin/hw/vendor.qti.hardware.soter@1.0-service
 vendor/etc/init/vendor.qti.hardware.soter@1.0-service.rc
 vendor/lib64/hw/vendor.qti.hardware.soter@1.0-impl.so
@@ -1122,7 +1166,7 @@ vendor/lib64/vendor.qti.hardware.soter@1.0.so
 # Thermal
 vendor/bin/thermal-engine
 vendor/etc/init/init_thermal-engine.rc
-vendor/etc/thermal-engine-nio.conf
+vendor/etc/thermal-engine-pstar.conf
 vendor/etc/thermal-engine.conf
 -vendor/lib/libthermalclient.so
 vendor/lib64/libsystempioctl.so
@@ -1135,16 +1179,15 @@ vendor/etc/init/init.time_daemon.rc
 vendor/lib64/libtime_genoff.so
 
 # Touchscreen firmware
-vendor/firmware/novatek_ts_fw.bin
-vendor/firmware/novatek_ts_mp.bin
-vendor/firmware/NT36xxx_MP_Setting_Criteria_6029.csv
+vendor/firmware/stmicro-csot-fts3639-21120227-de141027-pstar.ftb
+vendor/firmware/stmicro-visionox-fts3639-21072312-0009200c-pstar.ftb
 
 # Vibrator firmware
 vendor/firmware/aw8695_haptic.bin
-vendor/firmware/aw8695_rtp.bin
 vendor/firmware/aw8695_rtp_Argo_Navis.bin
 vendor/firmware/aw8695_rtp_Attentive.bin
 vendor/firmware/aw8695_rtp_Awake.bin
+vendor/firmware/aw8695_rtp.bin
 vendor/firmware/aw8695_rtp_Bird_Loop.bin
 vendor/firmware/aw8695_rtp_Brilliant_Times.bin
 vendor/firmware/aw8695_rtp_Chimey_Phone.bin
@@ -1173,6 +1216,8 @@ vendor/firmware/aw8695_rtp_Modular.bin
 vendor/firmware/aw8695_rtp_Momentum.bin
 vendor/firmware/aw8695_rtp_Morning.bin
 vendor/firmware/aw8695_rtp_Moto.bin
+vendor/firmware/aw8695_rtp_Moto_Original.bin
+vendor/firmware/aw8695_rtp_Moto_Retro.bin
 vendor/firmware/aw8695_rtp_Natural.bin
 vendor/firmware/aw8695_rtp_New_Player.bin
 vendor/firmware/aw8695_rtp_Now_or_Never.bin

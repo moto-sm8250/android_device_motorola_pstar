@@ -14,10 +14,10 @@
 // limitations under the License.
 
 cc_binary {
-    name: "vendor.lineage.touch@1.0-service.nio",
-    init_rc: ["vendor.lineage.touch@1.0-service.nio.rc"],
+    name: "vendor.lineage.touch@1.0-service.pstar",
+    init_rc: ["vendor.lineage.touch@1.0-service.pstar.rc"],
     defaults: ["hidl_defaults"],
-    vintf_fragments: ["vendor.lineage.touch@1.0-service.nio.xml"],
+    vintf_fragments: ["vendor.lineage.touch@1.0-service.pstar.xml"],
     relative_install_path: "hw",
     vendor: true,
     srcs: [

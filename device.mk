@@ -21,7 +21,7 @@ $(call inherit-product, $(SRC_TARGET_DIR)/product/updatable_apex.mk)
 $(call inherit-product, $(SRC_TARGET_DIR)/product/gsi_keys.mk)
 
 # Get non-open-source specific aspects
-$(call inherit-product-if-exists, vendor/motorola/nio/nio-vendor.mk)
+$(call inherit-product-if-exists, vendor/motorola/pstar/pstar-vendor.mk)
 
 BOARD_SHIPPING_API_LEVEL := 30
 BOARD_API_LEVEL := 30
@@ -49,9 +49,9 @@ PRODUCT_PACKAGES += \
     WifiResTarget
 
 PRODUCT_PACKAGES += \
-    FrameworksResNio \
-    SettingsResNio \
-    SystemUIResNio
+    FrameworksResPstar \
+    SettingsResPstar \
+    SystemUIResPstar
 
 # A/B
 AB_OTA_UPDATER := true
@@ -449,7 +449,7 @@ PRODUCT_PACKAGES += \
 
 # Touch
 PRODUCT_PACKAGES += \
-    vendor.lineage.touch@1.0-service.nio
+    vendor.lineage.touch@1.0-service.pstar
 
 # USB HAL
 PRODUCT_PACKAGES += \

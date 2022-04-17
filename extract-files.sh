@@ -8,7 +8,7 @@
 
 set -e
 
-DEVICE=nio
+DEVICE=pstar
 VENDOR=motorola
 
 # Load extract_utils and do some sanity checks

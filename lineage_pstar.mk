@@ -18,17 +18,17 @@
 $(call inherit-product, $(SRC_TARGET_DIR)/product/core_64_bit.mk)
 $(call inherit-product, $(SRC_TARGET_DIR)/product/full_base_telephony.mk)
 
-# Inherit from nio device
-$(call inherit-product, device/motorola/nio/device.mk)
+# Inherit from pstar device
+$(call inherit-product, device/motorola/pstar/device.mk)
 
 # Inherit some common Lineage stuff.
 $(call inherit-product, vendor/lineage/config/common_full_phone.mk)
 
 # Device identifier. This must come after all inclusions.
-PRODUCT_NAME := lineage_nio
-PRODUCT_DEVICE := nio
+PRODUCT_NAME := lineage_pstar
+PRODUCT_DEVICE := pstar
 PRODUCT_BRAND := motorola
-PRODUCT_MODEL := XT2125-4
+PRODUCT_MODEL := XT2153-1
 PRODUCT_MANUFACTURER := motorola
 PRODUCT_SHIPPING_API_LEVEL := 30
 
@@ -36,13 +36,13 @@ PRODUCT_AAPT_CONFIG := normal
 PRODUCT_AAPT_PREF_CONFIG := xxhdpi
 
 # Boot animation
-TARGET_SCREEN_HEIGHT := 2520
+TARGET_SCREEN_HEIGHT := 2400
 TARGET_SCREEN_WIDTH := 1080
 
 # Build info
-BUILD_FINGERPRINT := "motorola/nio_retcn/nio:11/RRN31.Q3-1-11-6/f81cc:user/release-keys"
+BUILD_FINGERPRINT := "motorola/pstar_retail/pstar:11/RRAS31.Q3-19-86-6/864d32:user/release-keys"
 PRODUCT_BUILD_PROP_OVERRIDES += \
-    PRODUCT_NAME=nio_retcn \
-    PRIVATE_BUILD_DESC="nio_retcn-user 11 RRN31.Q3-1-11-6 f81cc release-keys"
+    PRODUCT_NAME=pstar \
+    PRIVATE_BUILD_DESC="pstar_retail-user 11 RRAS31.Q3-19-86-6 864d32 release-keys"
 
 PRODUCT_GMS_CLIENTID_BASE := android-motorola

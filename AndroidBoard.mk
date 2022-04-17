@@ -21,8 +21,9 @@ RECOVERY_KMOD_TARGETS := \
     aw8695.ko \
     qpnp-smbcharger-mmi.ko \
     qpnp_adaptive_charge.ko \
-    nova_0flash_mmi.ko \
-    sensors_class.ko
+    stmicro_mmi.ko \
+    sensors_class.ko \
+    touchscreen_mmi.ko
 
 INSTALLED_RECOVERY_KMOD_TARGETS := $(RECOVERY_KMOD_TARGETS:%=$(TARGET_RECOVERY_ROOT_OUT)/lib/modules/%)
 $(INSTALLED_RECOVERY_KMOD_TARGETS): $(INSTALLED_KERNEL_TARGET)

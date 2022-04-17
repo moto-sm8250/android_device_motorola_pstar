@@ -19,7 +19,7 @@ BUILD_BROKEN_ELF_PREBUILT_PRODUCT_COPY_FILES := true
 
 BOARD_VENDOR := motorola
 
-DEVICE_PATH := device/motorola/nio
+DEVICE_PATH := device/motorola/pstar
 
 # Architecture
 TARGET_ARCH := arm64
@@ -37,7 +37,7 @@ TARGET_2ND_CPU_VARIANT := generic
 TARGET_2ND_CPU_VARIANT_RUNTIME := cortex-a76
 
 # Bootloader
-TARGET_BOOTLOADER_BOARD_NAME := nio
+TARGET_BOOTLOADER_BOARD_NAME := pstar
 TARGET_NO_BOOTLOADER := true
 
 # Kernel
@@ -51,7 +51,7 @@ TARGET_KERNEL_ADDITIONAL_FLAGS := \
     DTC_EXT=$(shell pwd)/prebuilts/misc/linux-x86/dtc/dtc \
     LLVM=1
 TARGET_KERNEL_ARCH := arm64
-TARGET_KERNEL_CONFIG := vendor/lineageos_nio_defconfig
+TARGET_KERNEL_CONFIG := vendor/lineageos_pstar_defconfig
 TARGET_KERNEL_SOURCE := kernel/motorola/sm8250
 TARGET_KERNEL_VERSION := 4.19
 TARGET_KERNEL_CLANG_COMPILE := true
@@ -234,4 +234,4 @@ WIFI_HIDL_UNIFIED_SUPPLICANT_SERVICE_RC_ENTRY := true
 WPA_SUPPLICANT_VERSION := VER_0_8_X
 
 # Inherit from the proprietary version
-include vendor/motorola/nio/BoardConfigVendor.mk
+include vendor/motorola/pstar/BoardConfigVendor.mk
