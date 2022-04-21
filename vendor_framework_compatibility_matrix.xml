@@ -1052,9 +1052,18 @@ IF ADVISED OF THE POSSIBILITY OF SUCH DAMAGE.
     </hal>
     <hal format="hidl" optional="true">
         <name>vendor.lineage.livedisplay</name>
-        <version>2.0</version>
+        <transport>hwbinder</transport>
+        <version>2.1</version>
+        <interface>
+            <name>IAntiFlicker</name>
+            <instance>default</instance>
+        </interface>
         <interface>
             <name>IPictureAdjustment</name>
+            <instance>default</instance>
+        </interface>
+        <interface>
+            <name>ISunlightEnhancement</name>
             <instance>default</instance>
         </interface>
     </hal>
