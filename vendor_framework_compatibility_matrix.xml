@@ -1038,7 +1038,7 @@ IF ADVISED OF THE POSSIBILITY OF SUCH DAMAGE.
         <name>vendor.lineage.touch</name>
         <version>1.0</version>
         <interface>
-            <name>ITouchscreenGesture</name>
+            <name>IHighTouchPollingRate</name>
             <instance>default</instance>
         </interface>
     </hal>
