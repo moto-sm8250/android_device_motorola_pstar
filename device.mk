@@ -13,8 +13,9 @@ PRODUCT_SOONG_NAMESPACES += \
 
 # Overlays
 PRODUCT_PACKAGES += \
-    FrameworksResNio \
-    SystemUIResNio
+    FrameworksResPstar \
+    SettingsResPstar \
+    SystemUIResPstar
 
 # Audio
 PRODUCT_COPY_FILES += \
@@ -22,4 +23,4 @@ PRODUCT_COPY_FILES += \
     $(LOCAL_PATH)/audio/mixer_paths.xml:$(TARGET_COPY_OUT_VENDOR)/etc/mixer_paths.xml
 
 # Get non-open-source specific aspects
-$(call inherit-product-if-exists, vendor/motorola/nio/nio-vendor.mk)
+$(call inherit-product-if-exists, vendor/motorola/pstar/pstar-vendor.mk)
