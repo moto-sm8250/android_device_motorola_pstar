@@ -11,6 +11,9 @@ DEVICE_PATH := device/motorola/pstar
 # Bootloader
 TARGET_BOOTLOADER_BOARD_NAME := pstar
 
+# HIDL
+DEVICE_MANIFEST_FILE += $(DEVICE_PATH)/manifest.xml
+
 # Kernel
 TARGET_KERNEL_CONFIG := vendor/lineageos_pstar_defconfig
 KERNEL_LTO := none
@@ -22,6 +25,9 @@ TARGET_TAP_TO_WAKE_NODE := "/sys/devices/platform/soc/a94000.i2c/i2c-2/2-0049/do
 
 # SEPolicy
 BOARD_VENDOR_SEPOLICY_DIRS += $(DEVICE_PATH)/sepolicy/vendor
+
+# Touch
+SOONG_CONFIG_MOTO_KONA_TOUCH_USE_TOUCH_POLLING_RATE := true
 
 # Inherit from the proprietary version
 -include vendor/motorola/pstar/BoardConfigVendor.mk
